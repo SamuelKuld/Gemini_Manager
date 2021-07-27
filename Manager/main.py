@@ -3,7 +3,9 @@ from imports import *
 acceptions = ["yes","1","true",
             "sure","absolutely",
             "probably","okay","ok",
-            "y", "accept"]
+            "y", "accept", "mhm", "yep",
+            "yuh", "yup", "yeah",
+            "yah", "ya"]
 
 print("Rates : ",
       "\n $.99 if trade <= $10.00",

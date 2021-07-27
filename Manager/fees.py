@@ -14,4 +14,5 @@ def true_fee_value(amount = 0):
     return {"total" : amount * 1.005, "point" : .995}
   for range in ranges:
     if amount >= range["value"] and amount < range["next"]:
-        return {"total" : (amount + range["fee"] * 2) + counter, "point" : abs((range["fee"] / amount) - (range["fee"] / range["value"]))}
+        return {"total" : (amount + range["fee"] * 2) + counter, 
+                "point" : abs((range["fee"] / amount) - (range["fee"] / range["value"]))}
