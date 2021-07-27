@@ -5,7 +5,7 @@ acceptions = ["yes","1","true",
             "probably","okay","ok",
             "y", "accept", "mhm", "yep",
             "yuh", "yup", "yeah",
-            "yah", "ya"]
+            "yah", "ya", "not no"]
 
 print("Rates : ",
       "\n $.99 if trade <= $10.00",
