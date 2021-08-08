@@ -25,7 +25,8 @@ print("Would you like to compensate for the fees?")
 if input().lower() in acceptions:
   result = true_fee_value(amount_putting_in)
   print(f"Amount going in = {result['total']}")
-  print("The point system works as \n\"   (Fee / Max Value purchaseable with minimum fee) - (Fee / Amount of dollars inputting)\"\nThis allows you to have a 0.0-1.0 amount of point room")
-  print(f"Value's minimum fee percentage point = {result['point'] * 10}")
+  print(f"Percent of fee of the amount given = {result['point']}")
+  print(f"Break Even Sell : {round_up((2 * (result['point'] / 100) + 1) * result['amount'])}")
+  print(f"Break Even Sell Percent : {result['point'] * 2}")
 
 input()
