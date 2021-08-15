@@ -28,5 +28,7 @@ if input().lower() in acceptions:
   print(f"Percent of fee of the amount given = {result['point']}")
   print(f"Break Even Sell : {round_up((2 * (result['point'] / 100) + 1) * result['amount'])}")
   print(f"Break Even Sell Percent : {result['point'] * 2}")
+else:
+  print("")
 
 input()

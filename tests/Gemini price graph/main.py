@@ -1,14 +1,13 @@
 from fees import *
 import matplotlib.pyplot as plot
-
 x = []
 y = []
 for dollar in range(0,250):
   x.append(true_fee_value(dollar)["amount"])
   y.append(true_fee_value(dollar)["point"])
 
-
-plot.plot(x, y)
+plot.style.use(["dark_background"])
+plot.plot(x, y, "r")
 
 plot.show()
 # This example shows us the best value that you can put in and get the best
